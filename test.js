@@ -1,6 +1,6 @@
 'use strict';
 var assert = require('assert');
-var stripShebang = require('./index');
+var stripShebang = require('./');
 
 it('should strip shebang from a string', function () {
 	assert.strictEqual(

@@ -28,6 +28,9 @@
     "hash",
     "pound"
   ],
+  "dependencies": {
+    "shebang-regex": "^1.0.0"
+  },
   "devDependencies": {
     "mocha": "*"
   }

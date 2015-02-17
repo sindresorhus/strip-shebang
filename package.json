@@ -1,6 +1,6 @@
 {
   "name": "strip-shebang",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Strip shebang (eg. #!/bin/sh) from a string",
   "license": "MIT",
   "repository": "sindresorhus/strip-shebang",

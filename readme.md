@@ -5,7 +5,7 @@
 
 ## Install
 
-```sh
+```
 $ npm install --save strip-shebang
 ```
 
@@ -13,10 +13,10 @@ $ npm install --save strip-shebang
 ## Usage
 
 ```js
-var fs = require('fs');
-var stripShebang = require('strip-shebang');
+const fs = require('fs');
+const stripShebang = require('strip-shebang');
 
-var str = fs.readFileSync('bin', 'utf8');
+const str = fs.readFileSync('bin', 'utf8');
 //=> #!/usr/bin/env node
 //=> console.log('unicorns');
 

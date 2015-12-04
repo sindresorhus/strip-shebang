@@ -1,10 +1,6 @@
-'use strict';
-var assert = require('assert');
-var stripShebang = require('./');
+import test from 'ava';
+import fn from './';
 
-it('should strip shebang from a string', function () {
-	assert.strictEqual(
-		stripShebang('#!/usr/bin/env node\nconsole.log("unicorns");'),
-		'\nconsole.log("unicorns");'
-	);
+test(t => {
+	t.is(fn('#!/usr/bin/env node\nconsole.log("unicorns");'), '\nconsole.log("unicorns");');
 });

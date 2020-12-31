@@ -1,4 +1,4 @@
-# strip-shebang [![Build Status](https://travis-ci.org/sindresorhus/strip-shebang.svg?branch=master)](https://travis-ci.org/sindresorhus/strip-shebang)
+# strip-shebang
 
 > Strip [shebang](https://en.wikipedia.org/wiki/Shebang_(Unix)) *(eg. `#!/bin/sh`)* from a string
 

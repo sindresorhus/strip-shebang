@@ -1,6 +1,5 @@
-'use strict';
-var shebangRegex = require('shebang-regex');
+import shebangRegex from 'shebang-regex';
 
-module.exports = function (str) {
-	return str.replace(shebangRegex, '');
-};
+export default function stripShebang(string) {
+	return string.replace(shebangRegex, '');
+}

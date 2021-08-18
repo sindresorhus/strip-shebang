@@ -1,6 +1,6 @@
 import test from 'ava';
-import fn from './';
+import stripShebang from './index.js';
 
-test(t => {
-	t.is(fn('#!/usr/bin/env node\nconsole.log("unicorns");'), '\nconsole.log("unicorns");');
+test('main', t => {
+	t.is(stripShebang('#!/usr/bin/env node\nconsole.log("unicorns");'), '\nconsole.log("unicorns");');
 });

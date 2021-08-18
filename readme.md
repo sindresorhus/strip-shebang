@@ -1,31 +1,24 @@
 # strip-shebang
 
-> Strip [shebang](https://en.wikipedia.org/wiki/Shebang_(Unix)) *(eg. `#!/bin/sh`)* from a string
-
+> Strip [shebang](https://en.wikipedia.org/wiki/Shebang_(Unix)) *(Example: `#!/bin/sh`)* from a string
 
 ## Install
 
 ```
-$ npm install --save strip-shebang
+$ npm install strip-shebang
 ```
-
 
 ## Usage
 
 ```js
-const fs = require('fs');
-const stripShebang = require('strip-shebang');
+import fs from 'node:fs';
+import stripShebang from 'strip-shebang';
 
-const str = fs.readFileSync('bin', 'utf8');
+const string = fs.readFileSync('unicorns', 'utf8');
 //=> #!/usr/bin/env node
 //=> console.log('unicorns');
 
-stripShebang(str);
+stripShebang(string);
 //=>
 //=> console.log('unicorns');
 ```
-
-
-## License
-
-MIT © [Sindre Sorhus](http://sindresorhus.com)
